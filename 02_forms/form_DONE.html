@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://asperin.fas.harvard.edu:444/oars/protected/showEntry.do? -->
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+	<header>
+		<h1>Form</h1>
+	</header>
+    <div id="main-copy" class="container">
+
+
+	<form>
+	<div class="row">
+	<div class="form-group">
+		<div class="col-sm-3"><label for="award-type">Award Name:</label></div>
+		<div class="col-sm-9"><select id="award-type" class="form-control" name="award_type" >
+			<option value="">-- Select from the following --</option>
+			
+				<option value="OTH"> Other Award </option>
+			
+				<option value="CC"> Coca-Cola Scholarship </option>
+			
+				<option value="FT"> Faculty Tuition Grant </option>
+			
+				<option value="GM"> Gates Millennium Scholarship </option>
+			
+				<option value="MS"> Massachusetts State Scholarship </option>
+			
+				<option value="NM"> National Merit/Achievement </option>
+			
+				<option value="SS"> State Scholarships (Not Massachusetts) </option>
+			
+			</select>
+		</div>
+	</div>
+	<div class="form-group" id="otherSelectedDiv" style="display: none;">
+		<div class="col-sm-3">
+			<label for="award-name" class="hidden-xs">If Other:</label>
+			<label for="award-name" class="visible-xs">Award Name, if 'Other' selected:</label>
+		</div>
+		<div class="col-sm-9">
+			<input id="award-name" class="form-control" type="text" name="award_name" placeholder="Award Name, if &#39;Other&#39; selected above" value="" size="50" maxlength="100">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3"><label for="award-contact-name">Contact Person:</label></div>
+		<div class="col-sm-9">
+			<input id="award-contact-name" class="form-control" type="text" name="contact_name" placeholder="Name of contact person, if known" value="" maxlength="50">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3"><label for="award-addr1" valign="top">Address:</label></div>
+		<div class="col-sm-9">
+			<input id="award-addr1" class="form-control" type="text" name="addr_line1" placeholder="Address line 1" value="" size="30" maxlength="50">
+			<input id="award-addr2" class="form-control" type="text" name="addr_line2" placeholder="Address Line 2" value="" size="30" maxlength="50">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3"><label for="award-addrCity" valign="top">City/State:</label></div>
+		<div class="col-sm-6">
+			<input id="award-addrCity" class="form-control" type="text" name="addr_city" placeholder="City" value="" size="20" maxlength="50">
+		</div>
+		<div class="col-sm-3">
+			<input id="award-addrState" class="form-control" type="text" name="addr_state" placeholder="State" value="" size="5" maxlength="20">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3"><label for="award-addrCountry" valign="top">Country (if outside US):</label></div>
+		<div class="col-sm-9">
+			<input id="award-addrCountry" class="form-control" type="text" name="addr_country_cd" placeholder="Country (if outside US)" value="" size="8" maxlength="3">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3"><label for="award-addrPostal" valign="top">Zip/Postal Code:</label></div>
+		<div class="col-sm-9">
+			<input id="award-addrPostal" class="form-control" type="text" name="addr_postal" placeholder="Zip/Postal Code" value="" size="8" maxlength="10">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3"><label for="award-contactEmail">Contact Email:</label></div>
+		<div class="col-sm-9">
+			<input id="award-contactEmail" class="form-control" type="text" name="contact_email" placeholder="Contact email, if known" value="" maxlength="100">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3"><label for="award-amount">Award Amount per year:</label></div>
+		<div class="col-sm-9">
+			<input id="award-amount" class="form-control" type="text" name="amount" placeholder="Award Amount per year" value="" size="10" onchange="this.value = filterNum(this.value)">
+		</div>
+	</div>
+	</div>
+	
+<p class="pull-right hidden-xs">
+<input class="btn btn-default" name="submitBtn" type="submit" value="Submit Award">
+<input class="btn btn-default" name="resetBtn" type="reset" value="Clear Form">
+<input class="btn btn-default" name="cancelBtn" type="button" value="Cancel" >
+</p>
+
+<p class="pull-right visible-xs">
+<input class="btn btn-default" name="submitBtn" type="submit" value=" Submit ">
+<input class="btn btn-default" name="resetBtn" type="reset" value=" Clear ">
+<input class="btn btn-default" name="cancelBtn" type="button" value=" Cancel " >
+</p>
+</form>
+
+<!-- Latest compiled and minified JavaScript (jQuery is also required) -->
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+</div>
+  
+<script src="form.js"></script>
+
+</body></html>
