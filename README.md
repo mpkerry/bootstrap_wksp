@@ -4,8 +4,9 @@ ABCD bootstrap wksp 3/19/2015
 Exercises to familiarize you with the essentials that Bootstrap has to offer.
 
 The basic idea is to work through the exercises in directory order, starting
-with 01 and if you have time to work through the more challenging exercises in 
-08, well, you work quickly. :)
+with 01-04 in ascending order, then picking through 05-08 in whatever order appeals
+to you. If you have time to also work through the more challenging exercises in 
+08 during the 90 minute workshop, well, then, you work quickly. :)
 
 Files are in pairs; all '*_DONE.html' files contain one possible solution; there
 are, of course, many others. The other html files are the starting points. All
