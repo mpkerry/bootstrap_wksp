@@ -1,3 +1,8 @@
+/**
+ * link_generator.groovy
+ * generate index page for abcd mobile workshop
+ */
+ 
 def f = new File(".")
 def srcDir = f.absolutePath
 srcDir = srcDir.substring(0,srcDir.length()-1)
