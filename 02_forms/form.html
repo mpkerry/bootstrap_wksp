@@ -94,12 +94,66 @@
 	</div>
 	</div>
 	
+		<div class="">
+		<label class="">
+		  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+		</label>
+		<label class="">
+		  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+		</label>
+		<label class="">
+		  <input  type="checkbox" id="inlineCheckbox3" value="option3"> 3 should be disabled!
+		</label>
+	</div>
+	
+	<div class="">
+		<label class="">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+		</label>
+		<label class="">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+		</label>
+		<label class=" disabled">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 should be disabled!
+		</label>
+	</div>
+	<div class="">
+  <label class="" for="inputSuccess2">Input with success</label>
+  <input type="text" class="" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+  <span class="" aria-hidden="true"></span>
+  <span id="inputSuccess2Status" class="sr-only">(success)</span>
+</div>
+<div class="">
+  <label class="" for="inputWarning2">Input with warning</label>
+  <input type="text" class="" id="inputWarning2" aria-describedby="inputWarning2Status">
+  <span class="" aria-hidden=""></span>
+  <span id="inputWarning2Status" class="">(warning)</span>
+</div>
+<div class="">
+  <label class="" for="inputError2">Input with error</label>
+  <input type="text" class="" id="inputError2" aria-describedby="inputError2Status">
+  <span class="" aria-hidden=""></span>
+  <span id="inputError2Status" class="">(error)</span>
+</div>
+<div class="">
+  <label class="" for="inputGroupSuccess1">Input group with success</label>
+  <div class="input-group">
+    <span class="">@</span>
+    <input type="text" class="" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+  </div>
+  <span class="" aria-hidden=""></span>
+  <span id="inputGroupSuccess1Status" class="">(success)</span>
+</div>
+	
+<!-- these buttons should only display on larger screens -->
 <p >
 <input  name="submitBtn" type="submit" value="Submit Award">
 <input  name="resetBtn" type="reset" value="Clear Form">
 <input  name="cancelBtn" type="button" value="Cancel" >
 </p>
 
+
+<!-- these buttons should only display on phone screens -->
 <p >
 <input  name="submitBtn" type="submit" value=" Submit ">
 <input  name="resetBtn" type="reset" value=" Clear ">
