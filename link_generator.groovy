@@ -12,7 +12,8 @@ def pw = new PrintWriter(dest)
 pw.println "<!DOCTYPE html>\n<html>\n<head>\n<title>ABCD Mobile Bootstrap WKSP - Links to exercises</title>\n"
 pw.println new File("00_resources/cdn_links.txt").text
 pw.println"</head>"
-pw.println "<body>\n<div class=\"container\"><h1>ABCD Mobile Bootstrap WKSP</h1>\n<h2>Links to exercises</h2>\n"
+pw.println "<body>\n<div class=\"container\">\n"
+pw.println "<div class=\"jumbotron\">\n<h1>ABCD Mobile Bootstrap WKSP</h1>\n<h2>Links to exercises</h2>\n</div>"
 def counter = 0
 f.eachFile { dir ->
 
