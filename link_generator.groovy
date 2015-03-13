@@ -9,11 +9,11 @@ srcDir = srcDir.substring(0,srcDir.length()-1)
 
 def dest = new File("index.html")
 def pw = new PrintWriter(dest)
-pw.println "<!DOCTYPE html>\n<html>\n<head>\n<title>ABCD Mobile Bootstrap WKSP - Links to exercises</title>\n"
-pw.println new File("00_resources/cdn_links.txt").text
+pw.println "<!DOCTYPE html>\n<html>\n<head>\n<title>Bootstrap WKSP - Links to exercises</title>\n"
+pw.println new File("00_resources/cdn_css.txt").text
 pw.println"</head>"
 pw.println "<body>\n<div class=\"container\">\n"
-pw.println "<div class=\"jumbotron\">\n<h1>ABCD Mobile Bootstrap WKSP</h1>\n<h2>Links to exercises</h2>\n</div>"
+pw.println "<div class=\"jumbotron\">\n<h1>Bootstrap Workshop</h1>\n<h2>Links to exercises</h2>\n</div>"
 def counter = 0
 f.eachFile { dir ->
 
@@ -22,7 +22,7 @@ f.eachFile { dir ->
         if (counter%3 == 0) {
             pw.println "<div class=\"row\">"
         }
-        pw.println "<div class=\"col-sm-4\"><h3>${dir.name} </h3>"
+        pw.println "<div class=\"col-sm-4\"><h3>${dir.name.replaceAll('_',' ')} </h3>"
         pw.println "<ul  class=\"list-unstyled\">"
         dir.eachFile { file ->
             if (file.name.contains(".txt") || file.name.contains(".html") || file.name.contains(".css") || file.name.contains(".js")) {
@@ -37,5 +37,7 @@ f.eachFile { dir ->
         counter++
     }
 }
-pw.println "\n</div>\n</body>\n</html>"
+pw.println "\n</div>"
+pw.println new File("00_resources/cdn_js.txt").text
+pw.println "\n</body>\n</html>"
 pw.close()
