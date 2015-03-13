@@ -12,7 +12,7 @@ def counter = 0
 f.eachFile { dir ->
 
     if (dir.isDirectory() && dir.name.charAt(0) != '.') {
-    println counter
+
         if (counter%3 == 0) {
             pw.println "<div class=\"row\">"
         }
