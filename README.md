@@ -8,15 +8,21 @@ with 01-04 in ascending order, then picking through 05-08 in whatever order appe
 to you. If you have time to also work through the more challenging exercises in 
 08 during the 90 minute workshop, well, then, you work quickly. :)
 
+Sections 01-04 are mostly about CSS: http://getbootstrap.com/css/
+
+Sections 05-08 refer more to the javascript portion of Bootstrap, although you can
+accomplish much functionality with CSS and other attributes:
+http://getbootstrap.com/javascript/
+
 Files are in pairs; all '*_DONE.html' files contain one possible solution; there
 are, of course, many others. The other html files are the starting points. All
 exercises can be completed with CSS classes alone, but can also instead be 
 completed with bootstrap.js - or some combination of the 2. The solutions 
 provided are almost exclusively CSS solutions.
 
-Open the starting file (e.g., '01_grid_breakpoints.html') in your favorite
-text editor/IDE. I also suggest making use of index.html as an anchor for 
-determining the layout of both starting and ending. This gives you a visual 
-reference as you go along. 
+Open the index file in the root of the project in a web browser so that you can
+see the starting and end states of the exercises, then open the first project 
+(e.g., '01_grid_breakpoints.html') in your favorite text editor/IDE. 
+This will give you a visual reference as you go along. 
 
 Happy coding!
