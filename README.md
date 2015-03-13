@@ -25,4 +25,7 @@ see the starting and end states of the exercises, then open the first project
 (e.g., '01_grid_breakpoints.html') in your favorite text editor/IDE. 
 This will give you a visual reference as you go along. 
 
+You may also find it useful to consult the 00_README.txt files in each section, 
+as they contain information and useful links.
+
 Happy coding!
