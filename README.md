@@ -21,10 +21,10 @@ completed with bootstrap.js - or some combination of the 2. The solutions
 provided are almost exclusively CSS solutions.
 
 Open the index file in the root of the project in a web browser so that you can
-see the starting and end states of the exercises, then open the first project 
-(e.g., '01_grid_breakpoints.html') in your favorite text editor/IDE. 
-This will give you a visual reference as you go along. 
-
+see the starting and end states of the exercises (this will give you a visual 
+reference as you work), then open the first project (e.g., '01_grid_breakpoints.html') 
+in your favorite text editor/IDE. 
+ 
 You may also find it useful to consult the 00_README.txt files in each section, 
 as they contain information and useful links.
 
