@@ -36,4 +36,4 @@ and how these can flow through the different form factors
  
 RESOURCES:
 
-see 00_resources/cdn_links.txt for quick copy/paste of js and css resources
+see 00_resources/cdn_js.txt and 00_resources/cdn_js.txt for quick copy/paste of js and css resources
