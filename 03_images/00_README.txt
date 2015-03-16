@@ -19,7 +19,12 @@ However, srcset is not supported across all browsers. Sigh. Works great in Chrom
 not at all yet in Firefox, although theoretically version 38 of FF will
 include support. IE? Ha :) Safari? Incomplete support (only x attributes, not the w attributes as above)
 
+Note that in the absence of support for srcset that the above tag does 
+have a src attribute, so will not fail completely; it also has an alt
+tag for browsers without any support for images (and screenreaders).
+
 The picture tag, while a more versatile option, is also only supported fully in Chrome.
+You will need a fallback strategy.
 
 References
 
