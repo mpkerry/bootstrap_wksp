@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>03 images</title>
+
+	
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+
+</head>
+<body>
+<div class="container">
+
+<div class="jumbotron">
+<h1>Bootstrap Workshop</h1>
+<h2>03 images</h2>
+</div>
+<h2>Images</h2>
+<p>Bootstrap makes images responsive with class="img-responsive". However, this only affects the scaling of the image on a mobile device, not the  size of the image itself. For that, we need other tools.</p>
+<p>The simplest approach for dealing with size is srcset:</p>
+<pre>
+&lt;img
+	srcset="some_image_large.jpg 1920w,
+			some_image_medium.jpg 960w,
+			some_image_small.jpg 480w "
+	src="some_image_medium.jpg"
+	alt="meaningful description of 'some image' in context of page"
+/&gt;
+</pre>
+<p>	</p>
+<p>However, srcset is not supported across all browsers. Sigh. Works great in Chrome, not yet really in Firefox, although theoretically version 38 of FF will include support. IE? Ha :) Safari? Incomplete support (only x attributes, not the w attributes as above)</p>
+<p>Note that in the absence of support for srcset that the above tag does have a src attribute, so will not fail completely; it also has an alt tag for browsers without any support for images (and screenreaders).</p>
+<p>The picture tag, while a more versatile option, is also only supported fully in Chrome. You will need a fallback strategy.</p>
+<h2>References</h2>
+<a href="http://alistapart.com/article/responsive-images-in-practice" target="_blank">http://alistapart.com/article/responsive-images-in-practice</a><br/>
+<a href="http://getbootstrap.com/css/#images" target="_blank">http://getbootstrap.com/css/#images</a><br/>
+<a href="http://getbootstrap.com/css/#images-responsive" target="_blank">http://getbootstrap.com/css/#images-responsive</a><br/>
+<a href="http://getbootstrap.com/css/#images-shapes" target="_blank">http://getbootstrap.com/css/#images-shapes</a><br/>
+<p>Availability of support varies:</p>
+<a href="http://caniuse.com/#feat=srcset" target="_blank">http://caniuse.com/#feat=srcset</a><br/>
+<a href="http://caniuse.com/#feat=picture" target="_blank">http://caniuse.com/#feat=picture</a><br/>
+
+</div>
+	
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+		<!-- Latest compiled and minified JavaScript (jQuery is also required, and must preceed bootstrap!) -->
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+
+</body>
+</html>
