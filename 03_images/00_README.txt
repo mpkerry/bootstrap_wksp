@@ -20,13 +20,24 @@ Note that in the absence of support for srcset that the above tag does have a sr
 
 The picture tag, while a more versatile option, is also only supported fully in Chrome. You will need a fallback strategy.
 
+-Glyphicons
+Bootstrap generously includes over 250 glyphs free of charge. Please use them where appropriate, while taking care to provide for users of assistive technologies.
+
+N.B. they must not be mixed with other components, and are only for use on empty elements. See http://getbootstrap.com/components/#glyphicons-how-to-use for more detail.
+
 -References
 
 http://alistapart.com/article/responsive-images-in-practice
 
+Bootstrap Images
 http://getbootstrap.com/css/#images
 http://getbootstrap.com/css/#images-responsive
 http://getbootstrap.com/css/#images-shapes
+
+Bootstrap Glyphicons
+http://getbootstrap.com/components/#glyphicons
+http://getbootstrap.com/components/#glyphicons-how-to-use
+http://getbootstrap.com/components/#glyphicons-examples
 
 Availability of support varies:
 http://caniuse.com/#feat=srcset
