@@ -34,20 +34,20 @@ f.eachFile { dir ->
     if (dir.isDirectory() && dir.name.charAt(0) != '.') {
 
         if (counter%3 == 0) {
-            pw.println "<div class=\"row\">"
+            pw.println "<div class=\"row\">\n"
         }
         pw.println "<div class=\"col-sm-4\"><h3><a href=\"${dir.name}/index.html\" target=\"_blank\">${dir.name.replaceAll('_',' ')}</a> </h3>"
-        pw.println "<ul  class=\"list-unstyled\">"
+        pw.println "\t<ul class=\"list-unstyled\">"
         dir.eachFile { file ->
             if ((file.name.contains(".txt") || file.name.contains(".html") || file.name.contains(".css") || file.name.contains(".js")) &&
                 !file.name.contains("index") && !file.name.contains("READ")) {
                 def fileName = file.absolutePath.replace(srcDir,'')
-                pw.println "<li><a href=\"$fileName\" target=\"_blank\">$file.name</a></li> "
+                pw.println "\t\t<li><a href=\"$fileName\" target=\"_blank\">$file.name</a></li> "
             }
         }
-        pw.println "</ul></div>"
+        pw.println "\t</ul>\n</div>\n"
         if (counter%3 == 2) {
-            pw.println "</div><!-- end of row -->"
+            pw.println "</div><!-- end of row -->\n"
         }
         counter++
     }
