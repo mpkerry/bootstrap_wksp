@@ -11,6 +11,8 @@ http://getbootstrap.com/javascript/#tabs
 http://getbootstrap.com/javascript/#tabs-usage
 http://getbootstrap.com/javascript/#tabs-events
 
--RESOURCES:
+-Resources:
 
 see 00_resources/cdn_js.txt and 00_resources/cdn_js.txt for quick copy/paste of js and css resources
+
+-Files

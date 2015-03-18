@@ -11,25 +11,167 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<style>.hider { font-size: .65em }</style>
 </head>
 <body>
 <div class="container">
 
 <div class="jumbotron">
 <h1>Bootstrap Workshop</h1>
-<h2>Links to exercises</h2>
+<h2>Instructions, Resources, Tools, and Links to exercises</h2>
 </div>
 <h3>Created for ABCD bootstrap wksp 3/19/2015</h3>
 <h4>Exercises to familiarize you with the essentials that Bootstrap has to offer.</h4>
-<a href="#instructions" data-toggle="collapse" aria-expanded="true" aria-controls="longContent">Show/Hide Instructions</a>
-<div id="instructions" class="collapse in"><p>The basic idea is to work through the exercises in directory order, starting with 01-04 in ascending order, then picking through 05-08 in whatever order appeals to you. If you have time to also work through the more challenging exercises in 09 during the 90 minute workshop, well, then, you work quickly. :)</p>
-<ul><li>Sections 01-04 are mostly about CSS: http://getbootstrap.com/css/</li>
-<li>Sections 05-08 refer more to the javascript portion of Bootstrap, although you can accomplish much functionality with CSS and other attributes: http://getbootstrap.com/javascript/</li>
-<li>Files are in pairs; all '*_DONE.html' files contain one possible solution; there are, of course, many others. The other html files are the starting points. All exercises can be completed with CSS classes alone, but can also instead be completed with bootstrap.js - or some combination of the 2. The solutions provided are almost exclusively CSS solutions.</li>
-<li>Open the index file in the root of the project in a web browser so that you can see the starting and end states of the exercises (this will give you a visual reference as you work), then open the first project (e.g., '01_grid_breakpoints.html') in your favorite text editor/IDE.</li>
-<li>You may also find it useful to consult the index page (click on the section header) and/or the 00_README.txt files in each section, as they contain information and useful links.</li></ul></div>
-<p>Happy coding!</p>
+
+		<h3><a href="#tools" data-toggle="collapse" aria-expanded="true" aria-controls="tools" class="btn btn-default btn-sm hider">Show/Hide</a> Tools/Setup</h3>
+		
+		<div id="tools" class="collapse">
+			
+			<p>
+				All the files required for this workshop are available on GitHub here:
+				<a href="https://github.com/michaelkerry/bootstrap_wksp" target="_blank">https://github.com/michaelkerry/bootstrap_wksp</a>
+			</p>
+
+			<h4>Easiest</h4>
+			<p>If you are *not* already comfortable with GitHub, the easiest thing to do is to download the zipped directory of all files 
+				<a href="https://github.com/michaelkerry/bootstrap_wksp/archive/gh-pages.zip" target="_blank">here</a>. You can then edit them
+				with your favored IDE/Text Editor.
+			</p>
+						
+			<h4>Moderately challenging</h4>
+			<p>If you *are* already comfortable with GitHub, and have a preferred IDE/Text Editor, please feel free to 
+				<a href="https://github.com/michaelkerry/bootstrap_wksp#fork-destination-box" target="_blank">fork the project</a>  
+				and clone it to your local machine, then edit the exercises	with your favored IDE/Text Editor.</p>
+			
+			<h4>For the Brave of Heart: Set up new GitHub account and use Aptana 3 Studio</h4>
+			<p>
+				If you would like to try something new, and are confident in your abilities, you may wish to try using Aptana 3 Studio to complete this project. 
+				Aptana 3 Studio is an IDE based on Eclipse but oriented towards HTML and Ruby development instead of Java or C development. 
+				I used Aptana 3 Studio to develop the materials for this workshop and commit them to the bootstrap_wskp repository on GitHub.
+				The most challenging part of this process may be setting up the SSH keys required to connect your local machine to GitHub. 
+				You will want to try to get this set up beforehand, as we won't have time to debug these issues during the workshop.
+			</p>
+				
+			<p>
+				You will need a GitHub acccount. If you do not already have one, please sign up here: 
+				<a href="https://github.com/" target="_blank">Github Home</a>
+			</p>
+			
+			<p>Once you have one, please follow the <a href="https://github.com/settings/ssh">instructions to set up ssh keys</a> on your working machine and share them with GitHub,
+				 so that you can fork and clone the project to your working machine.
+			</p>
+
+			<p>Download and install <a href="http://www.aptana.com/products/studio3/download.html" target="_blank">Aptana Studio 3</a>, 
+				which IMHO has easy-to-use Git integration already built in. You may wish to change the default workspace.</p>
+				
+			<p>If you are using Aptana 3 studio, you can fork and clone the project from GitHub by clicking on the 'File' menubar, then selecting 'Import',
+				 then opening the 'Git' directory, then selecting 'Fork GitHub Repository'. You will then need to enter 'michaelkerry' as the owner, 
+				 'bootstrap_wksp' for the repository, and then select a valid file path for the destination (in the current workspace is best). You will then see
+				 bootstrap_wksp appear as a project within Aptana 3 Studio, and you can select, open, and begin editing files. Click the Green Arrow button to 'Run' the
+				 File, which will open up a web browser to display the rendered page. </p>
+		</div>
+
+
+		<h3><a href="#instructions" data-toggle="collapse" aria-expanded="true" aria-controls="instructions" class="btn btn-default btn-sm hider">Show/Hide</a> Instructions</h3>
+		
+		<div id="instructions" class="collapse">
+			<p>The basic idea is to work through the exercises in directory order, starting with 01-04 in ascending order, then picking through 05-08 in whatever order appeals to you. If you have time to also work through the more challenging exercises in 09 during the 90 minute workshop, well, then, you work quickly. :)</p>
+		
+			<ul>
+				<li>Sections 01-04 are mostly about CSS: <a href="http://getbootstrap.com/css/" target="_blank">http://getbootstrap.com/css/</a></li>
+			
+				<li>Sections 05-08 refer more to the javascript portion of Bootstrap, although you can accomplish much functionality with CSS and other attributes: <a href="http://getbootstrap.com/javascript/" target="_blank">http://getbootstrap.com/javascript/</a></li>
+				
+				<li>Files are in pairs; all '*_DONE.html' files contain one possible solution; there are, of course, many others. The other html files are the starting points. All exercises can be completed with CSS classes alone, but can also instead be completed with bootstrap.js - or some combination of the 2. The solutions provided are almost exclusively CSS solutions.</li>
+				
+				<li>Open the index file in the root of the project in a web browser so that you can see the starting and end states of the exercises (this will give you a visual reference as you work), then open the first project (e.g., '01_grid_breakpoints/2evenCols.html') in your favorite text editor/IDE.</li>
+				
+				<li>You may also find it useful to consult the index page (click on the section header) and/or the 00_README.txt files in each section, as they contain information and useful links.</li>
+			</ul>
+		
+		</div>
+
+
+		<h3><a href="#links" data-toggle="collapse" aria-expanded="true" aria-controls="links" class="btn btn-default btn-sm hider">Show/Hide</a> Links of potential interest</h3>
+		
+		<div id="links" class="collapse">
+
+			
+			<ul>
+				
+			
+				<li>
+					Discussion of best responsive web frameworks
+					<ul>
+						<li>
+							<a href="http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html" target="_blank">
+								http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html
+							</a>
+						</li>
+					</ul>
+				</li>
+				
+				
+				<li>
+					
+					Google trends comparing Bootstrap, Skeleton, Foundation, Yaml frameworks
+					<ul>
+						<li>
+							<a href="http://www.google.com/trends/explore#q=bootstrap%20framework%2C%20skeleton%20framework%2C%20Yaml%20framework%2C%20Foundation%20framework&cmpt=q&tz=" target="_blank">
+							http://www.google.com/trends/explore#q=bootstrap%20framework%2C%20skeleton%20framework%2C%20Yaml%20framework%2C%20Foundation%20framework&cmpt=q&tz= 
+							</a>
+						</li>
+					</ul>
+				</li>
+			
+				<li>
+					
+					Bootstrap website
+					<ul>
+						<li>
+							<a href="http://getbootstrap.com/getting-started/" target="_blank">
+								http://getbootstrap.com/getting-started/ 
+							</a>
+						</li>
+					</ul>
+					
+				</li>
+				<li>
+					
+					Excellent tutorial for basics
+					<ul>
+						<li>
+							<a href="http://www.w3schools.com/bootstrap/default.asp" target="_blank">
+								http://www.w3schools.com/bootstrap/default.asp
+							</a>
+						</li>
+					</ul>
+					</li>
+				
+				
+				<li>
+					
+					Reponsive Design Patterns:
+					<ul>
+						<li>
+							<a href="http://bradfrost.github.io/this-is-responsive/patterns.html" target="_blank">
+								http://bradfrost.github.io/this-is-responsive/patterns.html 
+							</a>
+						</li>
+						<li>
+							<a href="http://designshack.net/articles/css/5-really-useful-responsive-web-design-patterns/" target="_blank">
+								http://designshack.net/articles/css/5-really-useful-responsive-web-design-patterns/
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>	
+<h3>Happy coding!</h3>
 <div class="row">
+<<<<<<< HEAD
 <div class="col-sm-4"><h3><a href="00_resources/index.html">00 resources</a> </h3>
 <ul  class="list-unstyled">
 <li><a href="./00_resources/cdn_css.txt" target="_blank">cdn_css.txt</a></li> 
@@ -60,82 +202,125 @@
 <li><a href="./02_forms/inline_form.html" target="_blank">inline_form.html</a></li> 
 <li><a href="./02_forms/inline_form_DONE.html" target="_blank">inline_form_DONE.html</a></li> 
 </ul></div>
+=======
+
+<div class="col-sm-4"><h3><a href="00_resources/index.html" target="_blank">00 resources</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./00_resources/cdn_css.txt" target="_blank">cdn_css.txt</a></li> 
+		<li><a href="./00_resources/cdn_js.txt" target="_blank">cdn_js.txt</a></li> 
+		<li><a href="./00_resources/web_links.txt" target="_blank">web_links.txt</a></li> 
+	</ul>
+</div>
+
+<div class="col-sm-4"><h3><a href="01_grid_breakpoints/index.html" target="_blank">01 grid breakpoints</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./01_grid_breakpoints/2evenCols.html" target="_blank">2evenCols.html</a></li> 
+		<li><a href="./01_grid_breakpoints/2evenCols_DONE.html" target="_blank">2evenCols_DONE.html</a></li> 
+		<li><a href="./01_grid_breakpoints/2unevenCols.html" target="_blank">2unevenCols.html</a></li> 
+		<li><a href="./01_grid_breakpoints/2unevenCols_DONE.html" target="_blank">2unevenCols_DONE.html</a></li> 
+		<li><a href="./01_grid_breakpoints/3evenCols.html" target="_blank">3evenCols.html</a></li> 
+		<li><a href="./01_grid_breakpoints/3evenCols_DONE.html" target="_blank">3evenCols_DONE.html</a></li> 
+		<li><a href="./01_grid_breakpoints/3unevenCols.html" target="_blank">3unevenCols.html</a></li> 
+		<li><a href="./01_grid_breakpoints/3unevenCols_DONE.html" target="_blank">3unevenCols_DONE.html</a></li> 
+		<li><a href="./01_grid_breakpoints/header2evenCols.html" target="_blank">header2evenCols.html</a></li> 
+		<li><a href="./01_grid_breakpoints/header3evenCols.html" target="_blank">header3evenCols.html</a></li> 
+	</ul>
+</div>
+
+<div class="col-sm-4"><h3><a href="02_forms/index.html" target="_blank">02 forms</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./02_forms/form.html" target="_blank">form.html</a></li> 
+		<li><a href="./02_forms/form.js" target="_blank">form.js</a></li> 
+		<li><a href="./02_forms/form_DONE.html" target="_blank">form_DONE.html</a></li> 
+		<li><a href="./02_forms/inline_form.html" target="_blank">inline_form.html</a></li> 
+		<li><a href="./02_forms/inline_form_DONE.html" target="_blank">inline_form_DONE.html</a></li> 
+	</ul>
+</div>
+
+>>>>>>> 32b7cdbb2313ae43b6949e451c4c04bc29cbcfbf
 </div><!-- end of row -->
+
 <div class="row">
-<div class="col-sm-4"><h3><a href="03_images/index.html">03 images</a> </h3>
-<ul  class="list-unstyled">
-<li><a href="./03_images/00_README.txt" target="_blank">00_README.txt</a></li> 
-<li><a href="./03_images/glyphicons.html" target="_blank">glyphicons.html</a></li> 
-<li><a href="./03_images/glyphicons_DONE.html" target="_blank">glyphicons_DONE.html</a></li> 
-<li><a href="./03_images/image.html" target="_blank">image.html</a></li> 
-<li><a href="./03_images/image_DONE.html" target="_blank">image_DONE.html</a></li> 
-<li><a href="./03_images/index.html" target="_blank">index.html</a></li> 
-</ul></div>
-<div class="col-sm-4"><h3><a href="04_navbar/index.html">04 navbar</a> </h3>
-<ul  class="list-unstyled">
-<li><a href="./04_navbar/00_README.txt" target="_blank">00_README.txt</a></li> 
-<li><a href="./04_navbar/defaultNavbar.html" target="_blank">defaultNavbar.html</a></li> 
-<li><a href="./04_navbar/defaultNavbar_DONE.html" target="_blank">defaultNavbar_DONE.html</a></li> 
-<li><a href="./04_navbar/fixedTop.html" target="_blank">fixedTop.html</a></li> 
-<li><a href="./04_navbar/fixedTop_DONE.html" target="_blank">fixedTop_DONE.html</a></li> 
-<li><a href="./04_navbar/index.html" target="_blank">index.html</a></li> 
-<li><a href="./04_navbar/navbar-fixed-top.css" target="_blank">navbar-fixed-top.css</a></li> 
-<li><a href="./04_navbar/navbar-static-top.css" target="_blank">navbar-static-top.css</a></li> 
-<li><a href="./04_navbar/navbar.css" target="_blank">navbar.css</a></li> 
-<li><a href="./04_navbar/staticTop.html" target="_blank">staticTop.html</a></li> 
-<li><a href="./04_navbar/staticTop_DONE.html" target="_blank">staticTop_DONE.html</a></li> 
-</ul></div>
-<div class="col-sm-4"><h3><a href="05_modal/index.html">05 modal</a> </h3>
-<ul  class="list-unstyled">
-<li><a href="./05_modal/00_README.txt" target="_blank">00_README.txt</a></li> 
-<li><a href="./05_modal/index.html" target="_blank">index.html</a></li> 
-<li><a href="./05_modal/modal.html" target="_blank">modal.html</a></li> 
-<li><a href="./05_modal/modal_DONE.html" target="_blank">modal_DONE.html</a></li> 
-<li><a href="./05_modal/multi_modal.html" target="_blank">multi_modal.html</a></li> 
-<li><a href="./05_modal/multi_modal.js" target="_blank">multi_modal.js</a></li> 
-<li><a href="./05_modal/multi_modal_DONE.html" target="_blank">multi_modal_DONE.html</a></li> 
-</ul></div>
+
+<div class="col-sm-4"><h3><a href="03_images/index.html" target="_blank">03 images</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./03_images/glyphicons.html" target="_blank">glyphicons.html</a></li> 
+		<li><a href="./03_images/glyphicons_DONE.html" target="_blank">glyphicons_DONE.html</a></li> 
+		<li><a href="./03_images/image.html" target="_blank">image.html</a></li> 
+		<li><a href="./03_images/image_DONE.html" target="_blank">image_DONE.html</a></li> 
+	</ul>
+</div>
+
+<div class="col-sm-4"><h3><a href="04_navbar/index.html" target="_blank">04 navbar</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./04_navbar/defaultNavbar.css" target="_blank">defaultNavbar.css</a></li> 
+		<li><a href="./04_navbar/defaultNavbar.html" target="_blank">defaultNavbar.html</a></li> 
+		<li><a href="./04_navbar/defaultNavbar_DONE.html" target="_blank">defaultNavbar_DONE.html</a></li> 
+		<li><a href="./04_navbar/fixedTop.css" target="_blank">fixedTop.css</a></li> 
+		<li><a href="./04_navbar/fixedTop.html" target="_blank">fixedTop.html</a></li> 
+		<li><a href="./04_navbar/fixedTop_DONE.html" target="_blank">fixedTop_DONE.html</a></li> 
+		<li><a href="./04_navbar/staticTop.css" target="_blank">staticTop.css</a></li> 
+		<li><a href="./04_navbar/staticTop.html" target="_blank">staticTop.html</a></li> 
+		<li><a href="./04_navbar/staticTop_DONE.html" target="_blank">staticTop_DONE.html</a></li> 
+	</ul>
+</div>
+
+<div class="col-sm-4"><h3><a href="05_modal/index.html" target="_blank">05 modal</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./05_modal/modal.html" target="_blank">modal.html</a></li> 
+		<li><a href="./05_modal/modal_content.html" target="_blank">modal_content.html</a></li> 
+		<li><a href="./05_modal/modal_DONE.html" target="_blank">modal_DONE.html</a></li> 
+		<li><a href="./05_modal/multi_modal.html" target="_blank">multi_modal.html</a></li> 
+		<li><a href="./05_modal/multi_modal.js" target="_blank">multi_modal.js</a></li> 
+		<li><a href="./05_modal/multi_modal_DONE.html" target="_blank">multi_modal_DONE.html</a></li> 
+	</ul>
+</div>
+
 </div><!-- end of row -->
+
 <div class="row">
-<div class="col-sm-4"><h3><a href="06_accordion/index.html">06 accordion</a> </h3>
-<ul  class="list-unstyled">
-<li><a href="./06_accordion/00_README.txt" target="_blank">00_README.txt</a></li> 
-<li><a href="./06_accordion/accordion.html" target="_blank">accordion.html</a></li> 
-<li><a href="./06_accordion/accordion_DONE.html" target="_blank">accordion_DONE.html</a></li> 
-<li><a href="./06_accordion/index.html" target="_blank">index.html</a></li> 
-</ul></div>
-<div class="col-sm-4"><h3><a href="07_tables/index.html">07 tables</a> </h3>
-<ul  class="list-unstyled">
-<li><a href="./07_tables/00_README.txt" target="_blank">00_README.txt</a></li> 
-<li><a href="./07_tables/basic_table.html" target="_blank">basic_table.html</a></li> 
-<li><a href="./07_tables/basic_table_DONE.html" target="_blank">basic_table_DONE.html</a></li> 
-<li><a href="./07_tables/index.html" target="_blank">index.html</a></li> 
-<li><a href="./07_tables/table_hide_columns.html" target="_blank">table_hide_columns.html</a></li> 
-<li><a href="./07_tables/table_hide_columns_DONE.html" target="_blank">table_hide_columns_DONE.html</a></li> 
-</ul></div>
-<div class="col-sm-4"><h3><a href="08_tabs/index.html">08 tabs</a> </h3>
-<ul  class="list-unstyled">
-<li><a href="./08_tabs/00_README.txt" target="_blank">00_README.txt</a></li> 
-<li><a href="./08_tabs/index.html" target="_blank">index.html</a></li> 
-<li><a href="./08_tabs/tabs.html" target="_blank">tabs.html</a></li> 
-<li><a href="./08_tabs/tabs_DONE.html" target="_blank">tabs_DONE.html</a></li> 
-</ul></div>
+
+<div class="col-sm-4"><h3><a href="06_accordion/index.html" target="_blank">06 accordion</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./06_accordion/accordion.html" target="_blank">accordion.html</a></li> 
+		<li><a href="./06_accordion/accordion_DONE.html" target="_blank">accordion_DONE.html</a></li> 
+	</ul>
+</div>
+
+<div class="col-sm-4"><h3><a href="07_tables/index.html" target="_blank">07 tables</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./07_tables/basic_table.html" target="_blank">basic_table.html</a></li> 
+		<li><a href="./07_tables/basic_table_DONE.html" target="_blank">basic_table_DONE.html</a></li> 
+		<li><a href="./07_tables/table_hide_columns.html" target="_blank">table_hide_columns.html</a></li> 
+		<li><a href="./07_tables/table_hide_columns_DONE.html" target="_blank">table_hide_columns_DONE.html</a></li> 
+	</ul>
+</div>
+
+<div class="col-sm-4"><h3><a href="08_tabs/index.html" target="_blank">08 tabs</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./08_tabs/tabs.html" target="_blank">tabs.html</a></li> 
+		<li><a href="./08_tabs/tabs_DONE.html" target="_blank">tabs_DONE.html</a></li> 
+	</ul>
+</div>
+
 </div><!-- end of row -->
+
 <div class="row">
-<div class="col-sm-4"><h3><a href="09_more/index.html">09 more</a> </h3>
-<ul  class="list-unstyled">
-<li><a href="./09_more/00_README.txt" target="_blank">00_README.txt</a></li> 
-<li><a href="./09_more/carousel.css" target="_blank">carousel.css</a></li> 
-<li><a href="./09_more/Carousel.html" target="_blank">Carousel.html</a></li> 
-<li><a href="./09_more/Carousel_DONE.html" target="_blank">Carousel_DONE.html</a></li> 
-<li><a href="./09_more/index.html" target="_blank">index.html</a></li> 
-<li><a href="./09_more/offCanvas.html" target="_blank">offCanvas.html</a></li> 
-<li><a href="./09_more/offcanvas.js" target="_blank">offcanvas.js</a></li> 
-<li><a href="./09_more/offCanvas_DONE.html" target="_blank">offCanvas_DONE.html</a></li> 
-<li><a href="./09_more/sticky-footer-navbar.css" target="_blank">sticky-footer-navbar.css</a></li> 
-<li><a href="./09_more/stickyFooterNavbar.html" target="_blank">stickyFooterNavbar.html</a></li> 
-<li><a href="./09_more/stickyFooterNavbar_DONE.html" target="_blank">stickyFooterNavbar_DONE.html</a></li> 
-</ul></div>
+
+<div class="col-sm-4"><h3><a href="09_more/index.html" target="_blank">09 more</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./09_more/carousel.css" target="_blank">carousel.css</a></li> 
+		<li><a href="./09_more/Carousel.html" target="_blank">Carousel.html</a></li> 
+		<li><a href="./09_more/Carousel_DONE.html" target="_blank">Carousel_DONE.html</a></li> 
+		<li><a href="./09_more/offCanvas.html" target="_blank">offCanvas.html</a></li> 
+		<li><a href="./09_more/offcanvas.js" target="_blank">offcanvas.js</a></li> 
+		<li><a href="./09_more/offCanvas_DONE.html" target="_blank">offCanvas_DONE.html</a></li> 
+		<li><a href="./09_more/sticky-footer-navbar.css" target="_blank">sticky-footer-navbar.css</a></li> 
+		<li><a href="./09_more/stickyFooterNavbar.html" target="_blank">stickyFooterNavbar.html</a></li> 
+		<li><a href="./09_more/stickyFooterNavbar_DONE.html" target="_blank">stickyFooterNavbar_DONE.html</a></li> 
+	</ul>
+</div>
+
 
 </div>
 	
