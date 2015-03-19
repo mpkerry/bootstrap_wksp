@@ -12,7 +12,7 @@
 
 
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
-<style>.hider { font-size: .65em }</style>
+<style>.hider { font-size: .65em !important} .normal { font-size: 1em !important}</style>
 </head>
 <body>
 <div class="container">
@@ -20,9 +20,9 @@
 <div class="jumbotron">
 <h1>Bootstrap Workshop</h1>
 <h2>Instructions, Resources, Tools, and Links to exercises</h2>
+<p class="pull-right normal">Created for ABCD bootstrap wksp 3/19/2015</p>
 </div>
-<h3>Created for ABCD bootstrap wksp 3/19/2015</h3>
-<h4>Exercises to familiarize you with the essentials that Bootstrap has to offer.</h4>
+<h3>Exercises to familiarize you with the essentials that Bootstrap has to offer.</h3>
 
 		<h3><a href="#tools" data-toggle="collapse" aria-expanded="true" aria-controls="tools" class="btn btn-default btn-sm hider">Show/Hide</a> Tools/Setup</h3>
 		
@@ -93,12 +93,12 @@
 		</div>
 
 
-		<h3><a href="#links" data-toggle="collapse" aria-expanded="true" aria-controls="links" class="btn btn-default btn-sm hider">Show/Hide</a> Links of potential interest</h3>
+		<h3><a href="#links" data-toggle="collapse" aria-expanded="true" aria-controls="links" class="btn btn-default btn-sm hider">Show/Hide</a> Links</h3>
 		
 		<div id="links" class="collapse">
 
-			
-			<ul>
+			<h4> Of Potential Interest</h4>
+			<ul class="list-unstyled">
 				
 			
 				<li>
@@ -170,16 +170,51 @@
 
 		</div>	
 <h3>Happy coding!</h3>
+                <div role="tabpanel">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#00" aria-controls="00" role="tab" data-toggle="tab">00</a></li>
+                    <li role="presentation"><a href="#01-04" aria-controls="01-04" role="tab" data-toggle="tab">01-04</a></li>
+                    <li role="presentation"><a href="#05-08" aria-controls="05-08" role="tab" data-toggle="tab">05-08</a></li>
+                    <li role="presentation"><a href="#09" aria-controls="09" role="tab" data-toggle="tab">09</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+
+<div role="tabpanel" class="tab-pane active" id="00">
+<p>&nbsp;</p>
 <div class="row">
-<div class="col-sm-4"><h3><a href="00_resources/index.html" target="_blank">00 resources</a> </h3>
+
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>00</title>
+    <desc>Section 00: resources</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="7" y="75" fill="white" style="font-size: 2em;">resources</text>
+</svg>
+<h3><a href="00_resources/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
 		<li><a href="./00_resources/cdn_css.txt" target="_blank">cdn_css.txt</a></li> 
 		<li><a href="./00_resources/cdn_js.txt" target="_blank">cdn_js.txt</a></li> 
-		<li><a href="./00_resources/web_links.txt" target="_blank">web_links.txt</a></li> 
 	</ul>
 </div>
 
-<div class="col-sm-4"><h3><a href="01_grid_breakpoints/index.html" target="_blank">01 grid breakpoints</a> </h3>
+</div><!-- end of row -->
+</div><!-- end of tab pane -->
+
+
+<div role="tabpanel" class="tab-pane" id="01-04">
+<p>&nbsp;</p>
+<div class="row">
+
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>01</title>
+    <desc>Section 01: grid</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="42" y="75" fill="white" style="font-size: 2em;">grid</text>
+</svg>
+<h3><a href="01_grid_breakpoints/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
 		<li><a href="./01_grid_breakpoints/2evenCols.html" target="_blank">2evenCols.html</a></li> 
 		<li><a href="./01_grid_breakpoints/2evenCols_DONE.html" target="_blank">2evenCols_DONE.html</a></li> 
@@ -189,26 +224,34 @@
 		<li><a href="./01_grid_breakpoints/3evenCols_DONE.html" target="_blank">3evenCols_DONE.html</a></li> 
 		<li><a href="./01_grid_breakpoints/3unevenCols.html" target="_blank">3unevenCols.html</a></li> 
 		<li><a href="./01_grid_breakpoints/3unevenCols_DONE.html" target="_blank">3unevenCols_DONE.html</a></li> 
-		<li><a href="./01_grid_breakpoints/header2evenCols.html" target="_blank">header2evenCols.html</a></li> 
-		<li><a href="./01_grid_breakpoints/header3evenCols.html" target="_blank">header3evenCols.html</a></li> 
 	</ul>
 </div>
 
-<div class="col-sm-4"><h3><a href="02_forms/index.html" target="_blank">02 forms</a> </h3>
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>02</title>
+    <desc>Section 02: forms</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="35" y="75" fill="white" style="font-size: 2em;">forms</text>
+</svg>
+<h3><a href="02_forms/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
 		<li><a href="./02_forms/form.html" target="_blank">form.html</a></li> 
-		<li><a href="./02_forms/form.js" target="_blank">form.js</a></li> 
 		<li><a href="./02_forms/form_DONE.html" target="_blank">form_DONE.html</a></li> 
+		<li><a href="./02_forms/form.js" target="_blank">form.js</a></li> 
 		<li><a href="./02_forms/inline_form.html" target="_blank">inline_form.html</a></li> 
 		<li><a href="./02_forms/inline_form_DONE.html" target="_blank">inline_form_DONE.html</a></li> 
 	</ul>
 </div>
 
-</div><!-- end of row -->
-
-<div class="row">
-
-<div class="col-sm-4"><h3><a href="03_images/index.html" target="_blank">03 images</a> </h3>
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>03</title>
+    <desc>Section 03: images</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="28" y="75" fill="white" style="font-size: 2em;">images</text>
+</svg>
+<h3><a href="03_images/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
 		<li><a href="./03_images/glyphicons.html" target="_blank">glyphicons.html</a></li> 
 		<li><a href="./03_images/glyphicons_DONE.html" target="_blank">glyphicons_DONE.html</a></li> 
@@ -217,43 +260,75 @@
 	</ul>
 </div>
 
-<div class="col-sm-4"><h3><a href="04_navbar/index.html" target="_blank">04 navbar</a> </h3>
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>04</title>
+    <desc>Section 04: navbar</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="28" y="75" fill="white" style="font-size: 2em;">navbar</text>
+</svg>
+<h3><a href="04_navbar/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
-		<li><a href="./04_navbar/defaultNavbar.css" target="_blank">defaultNavbar.css</a></li> 
 		<li><a href="./04_navbar/defaultNavbar.html" target="_blank">defaultNavbar.html</a></li> 
 		<li><a href="./04_navbar/defaultNavbar_DONE.html" target="_blank">defaultNavbar_DONE.html</a></li> 
-		<li><a href="./04_navbar/fixedTop.css" target="_blank">fixedTop.css</a></li> 
+		<li><a href="./04_navbar/defaultNavbar.css" target="_blank">defaultNavbar.css</a></li> 
 		<li><a href="./04_navbar/fixedTop.html" target="_blank">fixedTop.html</a></li> 
 		<li><a href="./04_navbar/fixedTop_DONE.html" target="_blank">fixedTop_DONE.html</a></li> 
-		<li><a href="./04_navbar/staticTop.css" target="_blank">staticTop.css</a></li> 
+		<li><a href="./04_navbar/fixedTop.css" target="_blank">fixedTop.css</a></li> 
 		<li><a href="./04_navbar/staticTop.html" target="_blank">staticTop.html</a></li> 
 		<li><a href="./04_navbar/staticTop_DONE.html" target="_blank">staticTop_DONE.html</a></li> 
-	</ul>
-</div>
-
-<div class="col-sm-4"><h3><a href="05_modal/index.html" target="_blank">05 modal</a> </h3>
-	<ul class="list-unstyled">
-		<li><a href="./05_modal/modal.html" target="_blank">modal.html</a></li> 
-		<li><a href="./05_modal/modal_content.html" target="_blank">modal_content.html</a></li> 
-		<li><a href="./05_modal/modal_DONE.html" target="_blank">modal_DONE.html</a></li> 
-		<li><a href="./05_modal/multi_modal.html" target="_blank">multi_modal.html</a></li> 
-		<li><a href="./05_modal/multi_modal.js" target="_blank">multi_modal.js</a></li> 
-		<li><a href="./05_modal/multi_modal_DONE.html" target="_blank">multi_modal_DONE.html</a></li> 
+		<li><a href="./04_navbar/staticTop.css" target="_blank">staticTop.css</a></li> 
 	</ul>
 </div>
 
 </div><!-- end of row -->
+</div><!-- end of tab pane -->
 
+
+<div role="tabpanel" class="tab-pane" id="05-08">
+<p>&nbsp;</p>
 <div class="row">
 
-<div class="col-sm-4"><h3><a href="06_accordion/index.html" target="_blank">06 accordion</a> </h3>
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>05</title>
+    <desc>Section 05: modal</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="35" y="75" fill="white" style="font-size: 2em;">modal</text>
+</svg>
+<h3><a href="05_modal/index.html" target="_blank">start</a> </h3>
+	<ul class="list-unstyled">
+		<li><a href="./05_modal/modal.html" target="_blank">modal.html</a></li> 
+		<li><a href="./05_modal/modal_DONE.html" target="_blank">modal_DONE.html</a></li> 
+		<li><a href="./05_modal/modal_content.html" target="_blank">modal_content.html</a></li> 
+		<li><a href="./05_modal/multi_modal.html" target="_blank">multi_modal.html</a></li> 
+		<li><a href="./05_modal/multi_modal_DONE.html" target="_blank">multi_modal_DONE.html</a></li> 
+		<li><a href="./05_modal/multi_modal.js" target="_blank">multi_modal.js</a></li> 
+	</ul>
+</div>
+
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>06</title>
+    <desc>Section 06: accordion</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="7" y="75" fill="white" style="font-size: 2em;">accordion</text>
+</svg>
+<h3><a href="06_accordion/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
 		<li><a href="./06_accordion/accordion.html" target="_blank">accordion.html</a></li> 
 		<li><a href="./06_accordion/accordion_DONE.html" target="_blank">accordion_DONE.html</a></li> 
 	</ul>
 </div>
 
-<div class="col-sm-4"><h3><a href="07_tables/index.html" target="_blank">07 tables</a> </h3>
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>07</title>
+    <desc>Section 07: tables</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="28" y="75" fill="white" style="font-size: 2em;">tables</text>
+</svg>
+<h3><a href="07_tables/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
 		<li><a href="./07_tables/basic_table.html" target="_blank">basic_table.html</a></li> 
 		<li><a href="./07_tables/basic_table_DONE.html" target="_blank">basic_table_DONE.html</a></li> 
@@ -262,7 +337,14 @@
 	</ul>
 </div>
 
-<div class="col-sm-4"><h3><a href="08_tabs/index.html" target="_blank">08 tabs</a> </h3>
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>08</title>
+    <desc>Section 08: tabs</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="42" y="75" fill="white" style="font-size: 2em;">tabs</text>
+</svg>
+<h3><a href="08_tabs/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
 		<li><a href="./08_tabs/tabs.html" target="_blank">tabs.html</a></li> 
 		<li><a href="./08_tabs/tabs_DONE.html" target="_blank">tabs_DONE.html</a></li> 
@@ -270,10 +352,21 @@
 </div>
 
 </div><!-- end of row -->
+</div><!-- end of tab pane -->
 
+
+<div role="tabpanel" class="tab-pane" id="09">
+<p>&nbsp;</p>
 <div class="row">
 
-<div class="col-sm-4"><h3><a href="09_more/index.html" target="_blank">09 more</a> </h3>
+<div class="col-sm-3">
+       <svg height="140" width="140">
+    <title>09</title>
+    <desc>Section 09: more</desc>
+    <circle cx="70" cy="70" r="68" stroke="grey" stroke-width="3" fill="grey" />
+    <text x="42" y="75" fill="white" style="font-size: 2em;">more</text>
+</svg>
+<h3><a href="09_more/index.html" target="_blank">start</a> </h3>
 	<ul class="list-unstyled">
 		<li><a href="./09_more/carousel.css" target="_blank">carousel.css</a></li> 
 		<li><a href="./09_more/Carousel.html" target="_blank">Carousel.html</a></li> 
@@ -288,6 +381,7 @@
 </div>
 
 
+</div>
 </div>
 	
 	    <!-- Bootstrap core JavaScript
