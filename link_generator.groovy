@@ -12,13 +12,12 @@ def pw = new PrintWriter(dest)
 pw.println "<!DOCTYPE html>\n<html>\n<head>\n<title>Bootstrap WKSP - Links to exercises</title>\n"
 pw.println new File("00_resources/cdn_css.txt").text
 pw.println "<meta name=\"viewport\" content=\"width=device-width; initial-scale=1.0\">"
-pw.println"<style>.hider { font-size: .65em }</style>\n</head>"
+pw.println"<style>\n\t.hider { font-size: .65em !important; } \n\t.normal {font-size: 1em !important; }\n</style>\n</head>"
 pw.println "<body>\n<div class=\"container\">\n"
-pw.println "<div class=\"jumbotron\">\n<h1>Bootstrap Workshop</h1>\n<h2>Instructions, Resources, Tools, and Links to exercises</h2>\n</div>"
+pw.println "<div class=\"jumbotron\">\n<h1>Bootstrap Workshop</h1>\n<h2>Instructions, Resources, Tools, and Links to exercises</h2>\n<p class=\"normal pull-right\">Created for ABCD bootstrap wksp 3/19/2015</p>\n</div>"
 
-pw.println "<h3>Created for ABCD bootstrap wksp 3/19/2015</h3>"
 
-pw.println "<h4>Exercises to familiarize you with the essentials that Bootstrap has to offer.</h4>"
+pw.println "<h3>Exercises to familiarize you with Bootstrap essentials.</h3>"
 
 pw.println new File("tools.html").text
 
@@ -62,21 +61,27 @@ f.eachFile { dir ->
         def dirName = dir.name.split('_')[1]
         pw.println "<div class=\"col-sm-3\">"
         
+        pw.println " <div class=\"hidden-xs\">"
         pw.println "       <svg height=\"140\" width=\"140\">"
         pw.println "    <title>$dirNum</title>"
         pw.println "    <desc>Section ${dirNum}: ${dirName}</desc>"
         pw.println "    <circle cx=\"70\" cy=\"70\" r=\"68\" stroke=\"grey\" stroke-width=\"3\" fill=\"grey\" />"
         pw.println "    <text x=\"${70-7*dirName.length()}\" y=\"75\" fill=\"white\" style=\"font-size: 2em;\">${dirName}</text>"
         pw.println "</svg>"
+        
+        
+        pw.println "</div>"
+      
 
         
-        pw.println"<h3><a href=\"${dir.name}/index.html\" target=\"_blank\">start</a> </h3>"
+        pw.println"<h3><a href=\"${dir.name}/index.html\" target=\"_blank\"><span class=\"hidden-xs\">start</span><span class=\"visible-xs\">${dirName}</span></a> </h3>"
         pw.println "\t<ul class=\"list-unstyled\">"
         dir.eachFile { file ->
             if ((file.name.contains(".txt") || file.name.contains(".html") || file.name.contains(".css") || file.name.contains(".js")) &&
                 !file.name.contains("index") && !file.name.contains("READ")) {
                 def fileName = file.absolutePath.replace(srcDir,'')
                 pw.println "\t\t<li><a href=\"$fileName\" target=\"_blank\">$file.name</a></li> "
+                if (fileName.contains('DONE')) { pw.println "\t\t<li>&nbsp;</li>" }
             }
         }
         pw.println "\t</ul>\n</div>\n"
