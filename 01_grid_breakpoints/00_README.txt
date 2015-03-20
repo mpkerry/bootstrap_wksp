@@ -18,18 +18,12 @@ http://getbootstrap.com/css/#grid-options
 
 Bootstrap also allows you to wrap up to 12 columns in a div with class="row". These row and column options can be combined with rows to create any arrangement of boxes desired on the page
 
-We'll go through a number of common permutations in the exercises:
-*2 even columns
-*2 uneven columns
-*3 even columns
-*3 uneven columns
-
-*2 columns with header
-*3 columns with header
-
-and how these can flow through the different form factors
+We'll go through a number of common permutations in the exercises: 2, 3, 4, 5, 6 columns, and some nesting scenarios, and how these can flow through the different form factors.
 
  
 -RESOURCES:
 
 see 00_resources/cdn_js.txt and 00_resources/cdn_js.txt for quick copy/paste of js and css resources
+
+-Files
+

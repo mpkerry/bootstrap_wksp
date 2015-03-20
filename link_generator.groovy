@@ -19,6 +19,8 @@ pw.println "<div class=\"jumbotron\">\n<h1>Bootstrap Workshop</h1>\n<h2>Instruct
 
 pw.println "<h3>Exercises to familiarize you with Bootstrap essentials.</h3>"
 
+pw.println new File("prereqs.html").text
+
 pw.println new File("tools.html").text
 
 pw.println new File("instructions.html").text
@@ -47,6 +49,11 @@ pw.println "                  <div class=\"tab-content\">"
 pw.println "\n<div role=\"tabpanel\" class=\"tab-pane active\" id=\"${tablist[0]}\">"
 pw.println "<p>&nbsp;</p>"
 pw.println "<div class=\"row\">\n"
+
+def htmlp = ~/.*\.html/
+def csp = ~/.*\.css/
+def jsp = ~/.*\.js/
+
 f.eachFile { dir ->
 
     if (dir.isDirectory() && dir.name.charAt(0) != '.') {
@@ -59,32 +66,28 @@ f.eachFile { dir ->
         
         def dirNum = dir.name.split('_')[0]
         def dirName = dir.name.split('_')[1]
-        pw.println "<div class=\"col-sm-3\">"
+        pw.println "\t<div class=\"col-sm-3\">"
         
-        pw.println " <div class=\"hidden-xs\">"
-        pw.println "       <svg height=\"140\" width=\"140\">"
-        pw.println "    <title>$dirNum</title>"
-        pw.println "    <desc>Section ${dirNum}: ${dirName}</desc>"
-        pw.println "    <circle cx=\"70\" cy=\"70\" r=\"68\" stroke=\"grey\" stroke-width=\"3\" fill=\"grey\" />"
-        pw.println "    <text x=\"${70-7*dirName.length()}\" y=\"75\" fill=\"white\" style=\"font-size: 2em;\">${dirName}</text>"
-        pw.println "</svg>"
+        pw.println "\t\t<div class=\"hidden-xs\">"
+        pw.println "\t\t\t<svg height=\"140\" width=\"140\">"
+        pw.println "\t\t\t\t<title>$dirNum</title>"
+        pw.println "\t\t\t\t<desc>Section ${dirNum}: ${dirName}</desc>"
+        pw.println "\t\t\t\t<circle cx=\"70\" cy=\"70\" r=\"68\" stroke=\"grey\" stroke-width=\"3\" fill=\"grey\" />"
+        pw.println "\t\t\t\t<text x=\"${70-7*dirName.length()}\" y=\"75\" fill=\"white\" style=\"font-size: 2em;\">${dirName}</text>"
+        pw.println "\t\t\t</svg>"
+        pw.println "\t\t</div>"
         
-        
-        pw.println "</div>"
-      
-
-        
-        pw.println"<h3><a href=\"${dir.name}/index.html\" target=\"_blank\"><span class=\"hidden-xs\">start</span><span class=\"visible-xs\">${dirName}</span></a> </h3>"
-        pw.println "\t<ul class=\"list-unstyled\">"
+        pw.println"\t\t<h3><a href=\"${dir.name}/index.html\" target=\"_blank\"><span class=\"hidden-xs\">start</span><span class=\"visible-xs\">${dirName}</span></a> </h3>"
+        pw.println "\t\t<ul class=\"list-unstyled\">"
         dir.eachFile { file ->
             if ((file.name.contains(".txt") || file.name.contains(".html") || file.name.contains(".css") || file.name.contains(".js")) &&
                 !file.name.contains("index") && !file.name.contains("READ")) {
                 def fileName = file.absolutePath.replace(srcDir,'')
-                pw.println "\t\t<li><a href=\"$fileName\" target=\"_blank\">$file.name</a></li> "
-                if (fileName.contains('DONE')) { pw.println "\t\t<li>&nbsp;</li>" }
+                pw.println "\t\t\t<li><a href=\"$fileName\" target=\"_blank\">$file.name</a></li> "
+                if (fileName.contains('DONE')) { pw.println "\t\t\t<li>&nbsp;</li>" }
             }
         }
-        pw.println "\t</ul>\n</div>\n"
+        pw.println "\t\t</ul>\n\t</div>\n"
         if (counter%4 == 0) {
             pw.println "</div><!-- end of row -->"
             pw.println "</div><!-- end of tab pane -->\n"
