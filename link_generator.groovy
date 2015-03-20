@@ -19,13 +19,7 @@ pw.println "<div class=\"jumbotron\" style=\"background-color: #293352 !importan
 
 pw.println "<h3>Exercises to familiarize you with Bootstrap essentials. Happy coding!</h3>"
 
-pw.println new File("prereqs.html").text
 
-pw.println new File("tools.html").text
-
-pw.println new File("instructions.html").text
-
-pw.println new File ("links.html").text
 
 pw.println "<p>&nbsp;</p>"
 
@@ -36,7 +30,11 @@ pw.println "                <div role=\"tabpanel\">"
 
 pw.println "                  <!-- Nav tabs -->"
 pw.println "                  <ul class=\"nav nav-tabs\" role=\"tablist\">"
-pw.println "                    <li role=\"presentation\" class=\"active\"><a href=\"#${tablist[0]}\" aria-controls=\"${tablist[0]}\" role=\"tab\" data-toggle=\"tab\">${tablist[0]}</a></li>"
+pw.println "                    <li role=\"presentation\" class=\"active\"><a href=\"#prereqs\" aria-controls=\"prereqs\" role=\"tab\" data-toggle=\"tab\">Prereq<span class=\"hidden-xs\">uisite</span>s</a></li>"
+pw.println "                    <li role=\"presentation\"><a href=\"#tools\" aria-controls=\"tools\" role=\"tab\" data-toggle=\"tab\">Setup<span class=\"hidden-xs\"> and Tools</span></a></li>"
+pw.println "                    <li role=\"presentation\"><a href=\"#instructions\" aria-controls=\"instructions\" role=\"tab\" data-toggle=\"tab\"><span class=\"hidden-xs\">Instructions</span><span class=\"visible-xs\">How</span></a></li>"
+pw.println "                    <li role=\"presentation\"><a href=\"#links\" aria-controls=\"links\" role=\"tab\" data-toggle=\"tab\">Links</a></li>"
+pw.println "                    <li role=\"presentation\"><a href=\"#${tablist[0]}\" aria-controls=\"${tablist[0]}\" role=\"tab\" data-toggle=\"tab\">${tablist[0]}</a></li>"
 pw.println "                    <li role=\"presentation\"><a href=\"#${tablist[1]}\" aria-controls=\"${tablist[1]}\" role=\"tab\" data-toggle=\"tab\">${tablist[1]}</a></li>"
 pw.println "                    <li role=\"presentation\"><a href=\"#${tablist[2]}\" aria-controls=\"${tablist[2]}\" role=\"tab\" data-toggle=\"tab\">${tablist[2]}</a></li>"
 pw.println "                    <li role=\"presentation\"><a href=\"#${tablist[3]}\" aria-controls=\"${tablist[3]}\" role=\"tab\" data-toggle=\"tab\">${tablist[3]}</a></li>"
@@ -46,7 +44,15 @@ pw.println "                  </ul>"
 pw.println "                  <!-- Tab panes -->"
 pw.println "                  <div class=\"tab-content\">"
 
-pw.println "\n<div role=\"tabpanel\" class=\"tab-pane active\" id=\"${tablist[0]}\">"
+pw.println new File("prereqs.html").text
+
+pw.println new File("tools.html").text
+
+pw.println new File("instructions.html").text
+
+pw.println new File ("links.html").text
+
+pw.println "\n<div role=\"tabpanel\" class=\"tab-pane\" id=\"${tablist[0]}\">"
 pw.println "<p>&nbsp;</p>"
 pw.println "<div class=\"row\">\n"
 
