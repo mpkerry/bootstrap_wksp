@@ -14,10 +14,10 @@ pw.println new File("00_resources/cdn_css.txt").text
 pw.println "<meta name=\"viewport\" content=\"width=device-width; initial-scale=1.0\">"
 pw.println"<style>\n\t.hider { font-size: .65em !important; } \n\t.normal {font-size: 1em !important; }\n</style>\n</head>"
 pw.println "<body>\n<div class=\"container\">\n"
-pw.println "<div class=\"jumbotron\">\n<h1>Bootstrap Workshop</h1>\n<h2>Instructions, Resources, Tools, and Links to exercises</h2>\n<p class=\"normal pull-right\">Created for ABCD bootstrap wksp 3/19/2015</p>\n</div>"
+pw.println "<div class=\"jumbotron\" style=\"background-color: #293352 !important; color: #F4EDCA !important; border: medium solid #4E84C4 !important;\">\n<h1>Bootstrap Workshop</h1>\n<h3>Instructions Resources Tools Exercises</h3>\n<p class=\"normal hidden-xs pull-right\"><strong>Originally created for ABCD-Mobile wksp 3/19/2015</strong></p>\n</div>"
 
 
-pw.println "<h3>Exercises to familiarize you with Bootstrap essentials.</h3>"
+pw.println "<h3>Exercises to familiarize you with Bootstrap essentials. Happy coding!</h3>"
 
 pw.println new File("prereqs.html").text
 
@@ -27,7 +27,7 @@ pw.println new File("instructions.html").text
 
 pw.println new File ("links.html").text
 
-pw.println "<h3>Happy coding!</h3>"
+pw.println "<p>&nbsp;</p>"
 
 int counter = 0
 def tablist = ['00','01-04','05-08','09']
@@ -72,8 +72,8 @@ f.eachFile { dir ->
         pw.println "\t\t\t<svg height=\"140\" width=\"140\">"
         pw.println "\t\t\t\t<title>$dirNum</title>"
         pw.println "\t\t\t\t<desc>Section ${dirNum}: ${dirName}</desc>"
-        pw.println "\t\t\t\t<circle cx=\"70\" cy=\"70\" r=\"68\" stroke=\"grey\" stroke-width=\"3\" fill=\"grey\" />"
-        pw.println "\t\t\t\t<text x=\"${70-7*dirName.length()}\" y=\"75\" fill=\"white\" style=\"font-size: 2em;\">${dirName}</text>"
+        pw.println "\t\t\t\t<circle cx=\"70\" cy=\"70\" r=\"68\" stroke=\"#4E84C4\" stroke-width=\"3\" fill=\"#293352\" />"
+        pw.println "\t\t\t\t<text x=\"${70-7*dirName.length()}\" y=\"75\" fill=\"#F4EDCA\" style=\"font-size: 2em;\">${dirName}</text>"
         pw.println "\t\t\t</svg>"
         pw.println "\t\t</div>"
         

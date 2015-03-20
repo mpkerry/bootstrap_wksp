@@ -26,7 +26,8 @@ f.eachFile { dir ->
             pw.println"</head>"
             pw.println "<body>\n<div class=\"container\">\n"
 
-            pw.println "<div class=\"jumbotron\">\n<h1>Bootstrap Workshop</h1>\n<h2>${fileName}</h2>\n</div>"
+            pw.println "<div class=\"jumbotron\" style=\"background-color: #293352 !important; color: #F4EDCA !important; border: medium solid #4E84C4 !important;\">"
+            pw.println "<h1>Bootstrap Workshop</h1>\n<h2>${fileName}</h2>\n</div>"
             
             def list = false
             def pre = false            
